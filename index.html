@@ -50,7 +50,7 @@
         
         //パーティクル
         var particle_geometry = new THREE.Geometry();
-        var numParticles = 200;
+        var numParticles = 1000;
         for(var i = 0 ; i < numParticles ; i++){
           particle_geometry.vertices.push(
             new THREE.Vector3(
@@ -60,7 +60,7 @@
         }
         
         var particle_material = new THREE.PointsMaterial({
-          size: 0.1,
+          size: 0.05,
           color: 0x80ffccaa,
           blending: THREE.AdditiveBlending,
           transparent: true,
