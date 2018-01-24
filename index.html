@@ -26,7 +26,7 @@
         }, false );
         
         var light = new THREE.DirectionalLight(0xcccccc);
-        light.position.set(0,100,30);
+        light.position.set(0,0,-100);
         scene.add(light);
         scene.add(new THREE.AmbientLight(0x666666));
         
@@ -37,7 +37,7 @@
 
         //光源黄
         var light3 = new THREE.PointLight(0xffff00,9);
-        light3.position.set(-300, -500, -300);
+        light3.position.set(-300, -500, 30);
         scene.add(light3);
         
         var loader = new THREE.TextureLoader();
